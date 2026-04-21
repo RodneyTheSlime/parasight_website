@@ -499,13 +499,25 @@ body::after {
 #s8 .team-chip {
   border: 1px solid var(--cyan);
   padding: 8px 16px;
-  font-size: clamp(6px, 0.8vw, 8px);
+  font-size: clamp(10px, 0.8vw, 10px);
   color: var(--cyan);
   letter-spacing: 1px;
   box-shadow: 0 0 10px var(--cyan);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   cursor: pointer;
 }
+
+#s8 .social-chip {
+  border: 1px solid var(--cyan);
+  padding: 8px 16px;
+  font-size: clamp(10px, 0.8vw, 10px);
+  color: var(--cyan);
+  letter-spacing: 1px;
+  box-shadow: 0 0 10px var(--cyan);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
 #s8 .sub2 {
   font-size: clamp(6px, 0.8vw, 9px);
   color: var(--dim);
@@ -815,7 +827,7 @@ body::after {
   
   #s8 .team-chip {
     padding: 12px 24px;
-    font-size: clamp(5px, 0.7vw, 7px);
+    font-size: clamp(10px, 0.8vw, 10px);
   }
   
   #s8 .sub2 {
@@ -1048,6 +1060,11 @@ body::after {
   
   #s8 .team-chip {
     padding: 8px 16px;
+    font-size: clamp(10px, 0.6vw, 10px);
+  }
+
+  #s8 .social-chip {
+    padding: 6px 12px;
     font-size: clamp(10px, 0.6vw, 10px);
   }
   
@@ -1487,16 +1504,16 @@ body::after {
     <p class="sub2" style="margin-top:15em;"><span class="press">↓</span> BUILT BY <span class="press">↓</span></p>
     <div class="social-row" style="margin-top:16px; flex-wrap:wrap; justify-content:center;">
       <a href="https://www.linkedin.com/in/yoseph-ephrem/" target="_blank" class="chip-link">
-        <div class="team-chip">Yoseph</div>
+        <div class="social-chip">Yoseph</div>
       </a>
       <a href="https://linkedin.com/in/mahdi-essawi" target="_blank" class="chip-link">
-        <div class="team-chip">Mahdi</div>
+        <div class="social-chip">Mahdi</div>
       </a>
       <a href="https://www.linkedin.com/in/cole-dubois-493429251/" target="_blank" class="chip-link">
-        <div class="team-chip">Cole</div>
+        <div class="social-chip">Cole</div>
       </a>
       <a href="https://www.linkedin.com/in/blake-ebner-582b9b35a/" target="_blank" class="chip-link">
-        <div class="team-chip">Blake</div>
+        <div class="social-chip">Blake</div>
       </a>
     </div>
     <!-- <p style="font-size:7px; color:var(--dim); letter-spacing:2px; margin-top:24px;">PRESS ← TO REVIEW · PRESS → TO DEMO</p> -->
