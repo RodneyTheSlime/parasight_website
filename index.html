@@ -217,6 +217,11 @@ body::after {
   margin-top: 40px;
   animation: blink 1.1s step-end infinite;
 }
+
+#StartSlime{
+  transition: opacity 0.3s ease;
+}
+
 @keyframes blink { 50% { opacity: 0; } }
 
 @keyframes lightUpAndDown {
@@ -506,6 +511,36 @@ body::after {
   color: var(--dim);
   letter-spacing: 2px;
   text-align: center;
+}
+
+@keyframes bounce-real {
+  0% {
+    transform: translateY(0) scaleY(1);
+  }
+  30% {
+    transform: translateY(-20px) scaleY(1.05);
+  }
+  50% {
+    transform: translateY(0) scaleY(0.9); /* squash on impact */
+  }
+  70% {
+    transform: translateY(-8px) scaleY(1.02);
+  }
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
+}
+
+#s8 .bounce {
+  animation: bounce-real 0.9s ease-in-out infinite;
+}
+
+#s8 .press{
+  font-size: clamp(6px, 0.8vw, 9px);
+  color: var(--dim);
+  letter-spacing: 2px;
+  margin-top: 24px;
+  animation: blink 2s ease-in-out infinite;
 }
 
 /* ── Progress bar ────────────────────────────────────────────── */
@@ -1437,13 +1472,31 @@ body::after {
     <div class="logo" style="font-size:clamp(28px,4.5vw,56px);">
       <span class="para">PARA</span><span class="sight">SIGHT</span>
     </div>
-    <img class="slime" src="mobile/assets/Happy.png" alt="Happy Rodney" style="width:clamp(90px,12vw,160px);">
+    <img class="slime bounce" src="mobile/assets/Happy.png" alt="Happy Rodney" style="width:clamp(90px,12vw,160px);">
     <div class="big-text">ALL CLEAN!</div>
     <p class="sub2" style="margin-top:4px;">THE SLIME HAS SPOKEN.</p>
     <p class="sub2" style="margin-top:16px;">BUILT IN 36 HOURS · KUHACK26 · 2026</p>
     <div class="team-row" style="margin-top:16px; flex-wrap:wrap; justify-content:center;">
       <a href="https://youtu.be/MDetrBXzEpw?si=buK0i_5PK7bk_Z6D" target="_blank" class="chip-link">
         <div class="team-chip">DEMO VIDEO</div>
+      </a>
+      <a href="https://devpost.com/software/parasight" target="_blank" class="chip-link">
+        <div class="team-chip">DevPost</div>
+      </a>
+    </div>
+    <p class="sub2" style="margin-top:15em;"><span class="press">↓</span> BUILT BY <span class="press">↓</span></p>
+    <div class="social-row" style="margin-top:16px; flex-wrap:wrap; justify-content:center;">
+      <a href="https://www.linkedin.com/in/yoseph-ephrem/" target="_blank" class="chip-link">
+        <div class="team-chip">Yoseph</div>
+      </a>
+      <a href="https://linkedin.com/in/mahdi-essawi" target="_blank" class="chip-link">
+        <div class="team-chip">Mahdi</div>
+      </a>
+      <a href="https://www.linkedin.com/in/cole-dubois-493429251/" target="_blank" class="chip-link">
+        <div class="team-chip">Cole</div>
+      </a>
+      <a href="https://www.linkedin.com/in/blake-ebner-582b9b35a/" target="_blank" class="chip-link">
+        <div class="team-chip">Blake</div>
       </a>
     </div>
     <!-- <p style="font-size:7px; color:var(--dim); letter-spacing:2px; margin-top:24px;">PRESS ← TO REVIEW · PRESS → TO DEMO</p> -->
