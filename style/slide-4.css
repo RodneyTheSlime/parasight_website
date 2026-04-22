@@ -1,0 +1,61 @@
+/* ── SLIDE 4: AI Smarts ──────────────────────────────────────── */
+#s4 .ai-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+  max-width: 880px;
+}
+
+#s4 .ai-card {
+  border: 2px solid var(--bdr);
+  background: var(--panel);
+  padding: 24px;
+}
+
+#s4 .ai-card h3 {
+  font-size: clamp(8px, 1vw, 11px);
+  margin-bottom: 14px;
+  letter-spacing: 2px;
+}
+
+#s4 .ai-card h3.g { 
+  color: var(--green); 
+  text-shadow: 0 0 8px var(--green); 
+}
+
+#s4 .ai-card h3.c { 
+  color: var(--cyan);  
+  text-shadow: 0 0 8px var(--cyan); 
+}
+
+#s4 .ai-card h3.p { 
+  color: var(--pink);  
+  text-shadow: 0 0 8px var(--pink); 
+}
+
+#s4 .ai-card h3.r { 
+  color: var(--red);   
+  text-shadow: 0 0 8px var(--red); 
+}
+
+#s4 .ai-card ul { 
+  list-style: none; 
+  padding: 0; 
+}
+
+#s4 .ai-card li {
+  font-size: clamp(7px, 0.85vw, 9px);
+  color: var(--txt);
+  line-height: 2.4;
+  letter-spacing: 0.5px;
+  padding-left: 14px;
+  position: relative;
+}
+
+#s4 .ai-card li::before { 
+  content: '>'; 
+  position: absolute; 
+  left: 0; 
+  color: var(--dim); 
+}

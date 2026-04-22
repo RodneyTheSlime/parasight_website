@@ -1,0 +1,46 @@
+/* ── SLIDE 3: Solution ───────────────────────────────────────── */
+#s3 .steps {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+  max-width: 1000px;
+  align-items: stretch;
+}
+
+#s3 .step {
+  flex: 1;
+  border: 2px solid var(--bdr);
+  background: var(--panel);
+  padding: 28px 20px;
+  text-align: center;
+  position: relative;
+}
+
+#s3 .step-num {
+  font-size: 32px;
+  color: var(--green);
+  text-shadow: 0 0 12px var(--green);
+  margin-bottom: 16px;
+  display: block;
+}
+
+#s3 .step h3 {
+  font-size: clamp(8px, 1vw, 11px);
+  color: var(--cyan);
+  letter-spacing: 2px;
+  margin-bottom: 14px;
+}
+
+#s3 .step p {
+  font-size: clamp(6px, 0.8vw, 8px);
+  color: var(--txt);
+  line-height: 2.4;
+  letter-spacing: 0.5px;
+}
+
+#s3 .arrow {
+  font-size: 24px;
+  color: var(--dim);
+  align-self: center;
+  flex-shrink: 0;
+}

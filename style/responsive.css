@@ -1,0 +1,551 @@
+/* ── Mobile Responsive Design ────────────────────────────────– */
+@media (max-width: 1024px) {
+  
+  #s1 .slime {
+    width: clamp(400px, 14vw, 400px);
+    margin: 8px 0;
+  }
+
+  .slide {
+    padding: 40px 40px;
+  }
+  
+  #s2 .problem-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  #s3 .steps {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  #s3 .arrow {
+    transform: rotate(90deg);
+  }
+  
+  #s4 .ai-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  #s5 .modes {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  #s7 .tech-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slide {
+    padding: 30px 20px;
+    gap: 16px;
+    transform: translateX(40px);
+  }
+  
+  .slide.exit {
+    transform: translateX(-40px);
+  }
+  
+  :root {
+    --font-size-multiplier: 0.85;
+  }
+  
+  .logo {
+    font-size: clamp(24px, 5vw, 48px);
+  }
+  
+  .section-title {
+    font-size: clamp(9px, 1.5vw, 16px);
+    margin-bottom: 24px;
+  }
+  
+  .tagline {
+    font-size: clamp(7px, 1vw, 12px);
+    margin-top: 8px;
+  }
+  
+  #s1 .slime {
+    width: clamp(350px, 14vw, 350px);
+    margin: 8px 0;
+  }
+  
+  #s1 .sub {
+    font-size: clamp(6px, 0.8vw, 9px);
+    margin-top: 2px;
+  }
+  
+  #s1 .press {
+    font-size: 7px;
+    margin-top: 24px;
+  }
+  
+  #s1 p {
+    font-size: clamp(6px, 0.85vw, 9px) !important;
+  }
+  
+  #s2 .problem-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    max-width: 100%;
+  }
+  
+  #s2 .problem-item {
+    padding: 16px 12px;
+  }
+  
+  #s2 .problem-item p {
+    font-size: clamp(6px, 0.8vw, 8px);
+    line-height: 2;
+  }
+  
+  #s2 .stat {
+    font-size: clamp(20px, 3.5vw, 36px);
+    margin-bottom: 8px;
+  }
+  
+  #s2 .neon-box {
+    max-width: 100%;
+    padding: 16px 20px;
+  }
+  
+  #s2 .neon-box p {
+    font-size: clamp(6px, 0.8vw, 8px);
+    line-height: 2.2;
+  }
+  
+  #s3 .steps {
+    flex-direction: column;
+    gap: 12px;
+    max-width: 100%;
+  }
+  
+  #s3 .step {
+    padding: 20px 16px;
+  }
+  
+  #s3 .step-num {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+  
+  #s3 .step h3 {
+    font-size: clamp(7px, 0.9vw, 10px);
+    margin-bottom: 10px;
+  }
+  
+  #s3 .step p {
+    font-size: clamp(6px, 0.75vw, 8px);
+    line-height: 2.2;
+  }
+  
+  #s3 .arrow {
+    transform: rotate(90deg);
+    font-size: 18px;
+    margin: 8px 0;
+  }
+  
+  #s3 p {
+    font-size: 6px !important;
+    margin-top: 16px;
+  }
+  
+  #s4 .ai-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    max-width: 100%;
+  }
+  
+  #s4 .ai-card {
+    padding: 16px;
+  }
+  
+  #s4 .ai-card h3 {
+    font-size: clamp(7px, 0.9vw, 10px);
+    margin-bottom: 10px;
+  }
+  
+  #s4 .ai-card li {
+    font-size: clamp(6px, 0.7vw, 8px);
+    line-height: 2.2;
+    padding-left: 12px;
+  }
+  
+  #s5 .modes {
+    flex-direction: column;
+    gap: 16px;
+    max-width: 100%;
+  }
+  
+  #s5 .mode-card {
+    padding: 24px 16px;
+  }
+  
+  #s5 .mode-card .mode-label {
+    font-size: clamp(16px, 2.2vw, 24px);
+    margin-bottom: 8px;
+  }
+  
+  #s5 .mode-card .mode-sub {
+    font-size: clamp(6px, 0.85vw, 8px);
+    margin-bottom: 16px;
+  }
+  
+  #s5 .mode-card .slime {
+    width: 80px;
+    margin: 12px auto;
+  }
+  
+  #s5 .mode-card li {
+    font-size: clamp(6px, 0.7vw, 8px);
+    line-height: 2.4;
+    padding-left: 12px;
+  }
+  
+  #s6 .phone-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .phone-mockup {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+  
+  .phone-mockup.featured {
+    transform: scale(1);
+  }
+  
+  #s7 .tech-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    max-width: 100%;
+  }
+  
+  .tech-card {
+    padding: 16px 10px;
+  }
+  
+  .tech-card .tech-icon {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  .tech-card .tech-name {
+    font-size: clamp(6px, 0.85vw, 8px);
+    margin-bottom: 6px;
+  }
+  
+  .tech-card .tech-desc {
+    font-size: clamp(5px, 0.6vw, 7px);
+    line-height: 1.8;
+  }
+  
+  #s8 .slime {
+    width: clamp(80px, 12vw, 140px);
+  }
+  
+  #s8 .big-text {
+    font-size: clamp(16px, 2.5vw, 32px);
+    letter-spacing: 2px;
+  }
+  
+  #s8 .team-row {
+    gap: 8px;
+    margin-top: 12px;
+  }
+  
+  #s8 .team-chip {
+    padding: 12px 24px;
+    font-size: clamp(10px, 0.8vw, 10px);
+  }
+  
+  #s8 .sub2 {
+    font-size: clamp(6px, 0.7vw, 8px);
+  }
+  
+  .nav {
+    bottom: 16px;
+    gap: 12px;
+  }
+  
+  .nav-btn {
+    font-size: 9px;
+    padding: 8px 12px;
+    min-width: 44px;
+    min-height: 44px;
+    display: none;
+  }
+  
+  .dots {
+    gap: 6px;
+  }
+  
+  .dot {
+    width: 7px;
+    height: 7px;
+  }
+  
+  .slide-counter {
+    top: 16px;
+    right: 16px;
+    font-size: 7px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slide {
+    padding: 20px 12px;
+    gap: 12px;
+    transform: translateX(30px);
+  }
+  
+  .slide.exit {
+    transform: translateX(-30px);
+  }
+  
+  .logo {
+    font-size: clamp(18px, 5vw, 36px);
+  }
+  
+  .section-title {
+    font-size: clamp(8px, 1.2vw, 12px);
+    margin-bottom: 16px;
+  }
+  
+  .tagline {
+    font-size: clamp(6px, 0.9vw, 10px);
+    margin-top: 6px;
+  }
+  
+  #s1 .slime {
+    width: clamp(300px, 14vw, 220px);
+    margin: 8px 0;
+  }
+  
+  #s1 .sub {
+    font-size: clamp(5px, 0.75vw, 8px);
+  }
+  
+  #s1 .press {
+    font-size: clamp(6px, 0.9vw, 10px);
+    margin-top: 16px;
+  }
+  
+  #s1 p {
+    font-size: clamp(7px, 0.8vw, 7px) !important;
+  }
+  
+  #s2 .problem-item {
+    padding: 12px 8px;
+  }
+  
+  #s2 .problem-item p {
+    font-size: clamp(5px, 0.7vw, 7px);
+    line-height: 1.8;
+  }
+  
+  #s2 .stat {
+    font-size: clamp(18px, 3vw, 28px);
+    margin-bottom: 6px;
+  }
+  
+  #s2 .neon-box {
+    padding: 12px 14px;
+  }
+  
+  #s2 .neon-box p {
+    font-size: clamp(5px, 0.7vw, 7px);
+    line-height: 2;
+  }
+  
+  #s3 .step {
+    padding: 16px 12px;
+  }
+  
+  #s3 .step-num {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  
+  #s3 .step h3 {
+    font-size: clamp(6px, 0.85vw, 8px);
+    margin-bottom: 8px;
+  }
+  
+  #s3 .step p {
+    font-size: clamp(5px, 0.7vw, 7px);
+    line-height: 2;
+  }
+  
+  #s3 .arrow {
+    font-size: 14px;
+    margin: 6px 0;
+  }
+  
+  #s3 p {
+    font-size: 5px !important;
+    margin-top: 12px;
+  }
+  
+  #s4 .ai-card {
+    padding: 12px;
+  }
+  
+  #s4 .ai-card h3 {
+    font-size: clamp(6px, 0.85vw, 8px);
+    margin-bottom: 8px;
+  }
+  
+  #s4 .ai-card li {
+    font-size: clamp(5px, 0.65vw, 7px);
+    line-height: 2;
+    padding-left: 10px;
+  }
+  
+  #s5 .mode-card {
+    padding: 16px 12px;
+  }
+  
+  #s5 .mode-card .mode-label {
+    font-size: clamp(14px, 2vw, 18px);
+    margin-bottom: 6px;
+  }
+  
+  #s5 .mode-card .mode-sub {
+    font-size: clamp(5px, 0.8vw, 7px);
+    margin-bottom: 12px;
+  }
+  
+  #s5 .mode-card .slime {
+    width: 70px;
+    margin: 8px auto;
+  }
+  
+  #s5 .mode-card li {
+    font-size: clamp(5px, 0.65vw, 7px);
+    line-height: 2.2;
+    padding-left: 10px;
+  }
+  
+  #s6 .phone-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .phone-mockup {
+    width: 100%;
+    max-width: 160px;
+    margin: 0 auto;
+  }
+  
+  .phone-mockup.featured {
+    transform: scale(1);
+  }
+  
+  #s7 .tech-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  
+  .tech-card {
+    padding: 12px 8px;
+  }
+  
+  .tech-card .tech-icon {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+  
+  .tech-card .tech-name {
+    font-size: clamp(8px, 0.8vw, 7px);
+    margin-bottom: 5px;
+  }
+  
+  .tech-card .tech-desc {
+    font-size: clamp(6px, 0.55vw, 10px);
+    line-height: 1.6;
+  }
+  
+  #s8 .logo {
+    font-size: clamp(16px, 4vw, 28px);
+  }
+  
+  #s8 .slime {
+    width: clamp(70px, 10vw, 110px);
+  }
+  
+  #s8 .big-text {
+    font-size: clamp(14px, 2.2vw, 24px);
+    letter-spacing: 1px;
+  }
+  
+  #s8 .team-row {
+    gap: 6px;
+    margin-top: 8px;
+  }
+  
+  #s8 .team-chip {
+    padding: 8px 16px;
+    font-size: clamp(10px, 0.6vw, 10px);
+  }
+
+  #s8 .social-chip {
+    padding: 6px 12px;
+    font-size: clamp(10px, 0.6vw, 10px);
+  }
+  
+  #s8 .sub2 {
+    font-size: clamp(5px, 0.65vw, 7px);
+    margin-top: 8px;
+  }
+  
+  #s8 p {
+    font-size: clamp(5px, 0.65vw, 7px) !important;
+  }
+  
+  .nav {
+    bottom: 12px;
+    gap: 8px;
+  }
+  
+  .nav-btn {
+    font-size: 7px;
+    padding: 6px 8px;
+    min-width: 40px;
+    min-height: 40px;
+  }
+  
+  .dots {
+    gap: 4px;
+  }
+  
+  .dot {
+    width: 6px;
+    height: 6px;
+  }
+  
+  .slide-counter {
+    top: 12px;
+    right: 12px;
+    font-size: 6px;
+  }
+}
+
+@media(max-width: 398px){
+  #s8 .social-chip {
+    padding: 4px 8px;
+    font-size: clamp(8px, 0.6vw, 8px);
+  }
+}

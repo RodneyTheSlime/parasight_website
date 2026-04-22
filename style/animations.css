@@ -1,0 +1,46 @@
+/* ── Keyframe Animations ─────────────────────────────────────── */
+@keyframes blink { 
+  50% { opacity: 0; } 
+}
+
+@keyframes lightUpAndDown {
+  0% {
+    transform: translateY(0px);
+    filter: drop-shadow(0 0 15px rgba(57,255,20,0.5));
+  }
+  50% {
+    transform: translateY(-10px);
+    filter: drop-shadow(0 0 15px rgba(57,255,20,0.5));
+  }
+  100% {
+    transform: translateY(-0.5px);
+    filter: drop-shadow(0 0 15px rgba(57,255,20,0.5));
+  }
+}
+
+@keyframes pulse {
+  0%, 100% { 
+    text-shadow: 0 0 20px var(--green), 0 0 40px rgba(57,255,20,0.4); 
+  }
+  50% { 
+    text-shadow: 0 0 30px var(--green), 0 0 60px rgba(57,255,20,0.7); 
+  }
+}
+
+@keyframes bounce-real {
+  0% {
+    transform: translateY(0) scaleY(1);
+  }
+  30% {
+    transform: translateY(-20px) scaleY(1.05);
+  }
+  50% {
+    transform: translateY(0) scaleY(0.9);
+  }
+  70% {
+    transform: translateY(-8px) scaleY(1.02);
+  }
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
+}

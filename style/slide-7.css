@@ -1,0 +1,42 @@
+/* ── SLIDE 7: Tech Stack ─────────────────────────────────────── */
+#s7 .tech-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  width: 100%;
+  max-width: 960px;
+}
+
+.tech-card {
+  border: 1px solid var(--bdr);
+  background: var(--panel);
+  padding: 20px 14px;
+  text-align: center;
+}
+
+.tech-card .tech-icon { 
+  font-size: 24px; 
+  margin-bottom: 12px; 
+  display: block; 
+}
+
+.tech-card .tech-name {
+  font-size: clamp(7px, 0.9vw, 9px);
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.tech-card .tech-desc {
+  font-size: clamp(6px, 0.8vw, 9px);
+  color: var(--dim);
+  letter-spacing: 0.5px;
+  line-height: 2;
+}
+
+.tech-card.highlight { 
+  border-color: var(--cyan); 
+}
+
+.tech-card.highlight .tech-name { 
+  color: var(--cyan);
+}

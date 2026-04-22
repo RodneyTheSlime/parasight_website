@@ -1,0 +1,29 @@
+/* ── Reset & Base ─────────────────────────────────────────────── */
+*, *::before, *::after { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+}
+
+:root {
+  --bg:      #070010;
+  --panel:   #0f001e;
+  --green:   #39ff14;
+  --red:     #ff2d2d;
+  --cyan:    #00f5ff;
+  --pink:    #ff2d78;
+  --dim:     #5a3a8a;
+  --bdr:     #2a0050;
+  --txt:     #e8d5ff;
+  --font:    'Press Start 2P', monospace;
+}
+
+html, body {
+  width: 100%; 
+  height: 100%;
+  background: var(--bg);
+  color: var(--txt);
+  font-family: var(--font);
+  overflow: hidden;
+  user-select: none;
+}

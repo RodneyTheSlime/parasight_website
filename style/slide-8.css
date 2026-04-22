@@ -1,0 +1,70 @@
+/* ── SLIDE 8: Closing ────────────────────────────────────────── */
+#s8 { 
+  gap: 20px; 
+}
+
+#s8 .slime { 
+  width: clamp(100px, 14vw, 180px); 
+}
+
+#s8 .big-text {
+  font-size: clamp(18px, 3vw, 40px);
+  color: var(--green);
+  text-shadow: 0 0 20px var(--green), 0 0 40px rgba(57,255,20,0.4);
+  letter-spacing: 4px;
+  text-align: center;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+#s8 .team-row {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+#s8 .team-chip {
+  border: 1px solid var(--cyan);
+  padding: 8px 16px;
+  font-size: clamp(10px, 0.8vw, 10px);
+  color: var(--cyan);
+  letter-spacing: 1px;
+  box-shadow: 0 0 10px var(--cyan);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+#s8 .social-chip {
+  border: 1px solid var(--cyan);
+  padding: 8px 16px;
+  font-size: clamp(10px, 0.8vw, 10px);
+  color: var(--cyan);
+  letter-spacing: 1px;
+  box-shadow: 0 0 10px var(--cyan);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+#s8 .sub2 {
+  font-size: clamp(6px, 0.8vw, 9px);
+  color: var(--dim);
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+#s8 .bounce {
+  animation: bounce-real 0.9s ease-in-out infinite;
+}
+
+#s8 .press {
+  font-size: clamp(6px, 0.8vw, 9px);
+  color: var(--dim);
+  letter-spacing: 2px;
+  margin-top: 24px;
+  animation: blink 2s ease-in-out infinite;
+}
+
+.social-row {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}

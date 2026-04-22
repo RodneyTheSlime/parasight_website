@@ -1,0 +1,168 @@
+/* ── SLIDE 6: Phone Gallery ──────────────────────────────────── */
+#s6 .phone-row {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.phone-mockup {
+  width: clamp(100px, 13vw, 160px);
+  border: 3px solid var(--bdr);
+  border-radius: 18px;
+  overflow: hidden;
+  background: var(--bg);
+  box-shadow: 0 0 20px rgba(57,255,20,0.15);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.phone-mockup.featured {
+  border-color: var(--green);
+  box-shadow: 0 0 30px rgba(57,255,20,0.35);
+  transform: scale(1.08);
+}
+
+.phone-screen {
+  width: 100%;
+  padding-bottom: 200%;
+  background: var(--panel);
+  position: relative;
+  overflow: hidden;
+}
+
+.phone-screen-inner {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 4px 4px 8px 4px;
+  font-size: 5px;
+  letter-spacing: 0.5px;
+  line-height: 1.8;
+  overflow-y: auto;
+}
+
+.screen-label {
+  font-size: clamp(6px, 0.7vw, 8px);
+  color: var(--dim);
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* ── Screen simulations (phone internals) ──────────────────── */
+.sim-header {
+  width: 100%;
+  background: var(--panel);
+  padding: 4px 6px;
+  border-bottom: 1px solid var(--bdr);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.sim-logo { 
+  font-size: 5px; 
+}
+
+.sim-logo .p { 
+  color: var(--green); 
+}
+
+.sim-logo .s { 
+  color: var(--red); 
+}
+
+.sim-slime-img {
+  width: 50%;
+  max-width: 60px;
+  image-rendering: pixelated;
+  filter: drop-shadow(0 0 6px rgba(57,255,20,0.6));
+  transition: opacity 0.8s ease-in-out;
+}
+
+.sim-green { 
+  color: var(--green); 
+  font-size: 5px; 
+  text-align: center; 
+  line-height: 2; 
+}
+
+.sim-cyan { 
+  color: var(--cyan);  
+  font-size: 5px; 
+  text-align: center; 
+}
+
+.sim-pink { 
+  color: var(--pink);  
+  font-size: 5px; 
+  text-align: center; 
+}
+
+.sim-bar {
+  width: 80%;
+  height: 4px;
+  background: var(--panel);
+  border: 1px solid var(--cyan);
+  margin: 4px auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.sim-bar-fill {
+  height: 100%;
+  background: var(--cyan);
+  box-shadow: 0 0 4px var(--cyan);
+}
+
+.sim-btn {
+  width: 80%;
+  background: var(--pink);
+  color: #fff;
+  font-size: 4px;
+  padding: 4px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  margin: 4px auto;
+}
+
+.sim-btn.green { 
+  background: var(--green); 
+  color: #001000; 
+}
+
+.sim-card-img {
+  width: 90%;
+  height: 60px;
+  background: linear-gradient(135deg, #1a003a, #0f001e);
+  border: 1px solid var(--pink);
+  margin: 4px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.sim-badge {
+  position: absolute;
+  top: 2px; 
+  left: 2px;
+  background: var(--green);
+  color: #001000;
+  font-size: 4px;
+  padding: 1px 3px;
+}
+
+.sim-badge.pink { 
+  background: var(--pink); 
+  color: #fff; 
+}

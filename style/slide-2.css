@@ -1,0 +1,37 @@
+/* ── SLIDE 2: Problem ────────────────────────────────────────── */
+#s2 .problem-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 900px;
+  margin-top: 10px;
+}
+
+#s2 .problem-item {
+  border: 1px solid var(--bdr);
+  background: var(--panel);
+  padding: 24px 20px;
+  text-align: center;
+}
+
+#s2 .problem-item .icon { 
+  font-size: 28px; 
+  margin-bottom: 16px; 
+  display: block; 
+}
+
+#s2 .problem-item p {
+  font-size: clamp(7px, 0.9vw, 9px);
+  color: var(--txt);
+  line-height: 2.2;
+  letter-spacing: 1px;
+}
+
+#s2 .stat {
+  font-size: clamp(24px, 4vw, 48px);
+  color: var(--red);
+  text-shadow: 0 0 16px var(--red);
+  margin-bottom: 10px;
+  display: block;
+}

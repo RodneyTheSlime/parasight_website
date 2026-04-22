@@ -1,0 +1,84 @@
+/* ── SLIDE 5: Modes ──────────────────────────────────────────── */
+#s5 .modes {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+  max-width: 860px;
+  align-items: stretch;
+}
+
+#s5 .mode-card {
+  flex: 1;
+  padding: 36px 32px;
+  text-align: center;
+  border-width: 3px;
+  border-style: solid;
+}
+
+#s5 .mode-card.fun { 
+  border-color: var(--pink); 
+  box-shadow: 0 0 24px rgba(255,45,120,0.25); 
+}
+
+#s5 .mode-card.fast { 
+  border-color: var(--green); 
+  box-shadow: 0 0 24px rgba(57,255,20,0.25); 
+}
+
+#s5 .mode-card .mode-label {
+  font-size: clamp(18px, 2.5vw, 30px);
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+}
+
+#s5 .mode-card.fun  .mode-label { 
+  color: var(--pink); 
+  text-shadow: 0 0 12px var(--pink); 
+}
+
+#s5 .mode-card.fast .mode-label { 
+  color: var(--green); 
+  text-shadow: 0 0 12px var(--green); 
+}
+
+#s5 .mode-card .mode-sub {
+  font-size: clamp(7px, 0.9vw, 9px);
+  letter-spacing: 2px;
+  color: var(--dim);
+  margin-bottom: 24px;
+}
+
+#s5 .mode-card .slime { 
+  width: 90px; 
+  margin: 16px auto; 
+  display: block; 
+}
+
+#s5 .mode-card ul { 
+  list-style: none; 
+  text-align: left; 
+}
+
+#s5 .mode-card li {
+  font-size: clamp(7px, 0.85vw, 9px);
+  color: var(--txt);
+  line-height: 2.6;
+  letter-spacing: 0.5px;
+  padding-left: 14px;
+  position: relative;
+}
+
+#s5 .mode-card li::before { 
+  content: '★'; 
+  position: absolute; 
+  left: 0; 
+  font-size: 7px; 
+}
+
+#s5 .mode-card.fun  li::before { 
+  color: var(--pink); 
+}
+
+#s5 .mode-card.fast li::before { 
+  color: var(--green); 
+}

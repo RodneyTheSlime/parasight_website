@@ -1,0 +1,33 @@
+/* ── SLIDE 1: Title ──────────────────────────────────────────── */
+#s1 { 
+  gap: 24px; 
+}
+
+#s1 .logo { 
+  font-size: clamp(36px, 6vw, 72px); 
+}
+
+#s1 .slime { 
+  width: clamp(480px, 14vw, 480px);
+  margin: 8px 0; 
+  animation: lightUpAndDown 2s ease-in-out infinite; 
+}
+
+#s1 .sub {
+  font-size: clamp(7px, 1vw, 11px);
+  color: var(--dim);
+  letter-spacing: 2px;
+  margin-top: 4px;
+}
+
+#s1 .press {
+  font-size: clamp(7px, 1vw, 11px);
+  color: var(--dim);
+  letter-spacing: 2px;
+  margin-top: 40px;
+  animation: blink 1.1s step-end infinite;
+}
+
+#StartSlime {
+  transition: opacity 0.3s ease;
+}
